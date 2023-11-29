@@ -61,7 +61,6 @@ class ChatModel:
         max_length = input_kwargs.pop("max_length", None)
         max_new_tokens = input_kwargs.pop("max_new_tokens", None)
 
-        # generating_args = self.generating_args.to_dict()
         generating_args = {}
         generating_args.update(dict(
             do_sample=do_sample if do_sample is not None else generating_args.get("do_sample"),
