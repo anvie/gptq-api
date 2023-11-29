@@ -1,4 +1,4 @@
-# GPTQAPI Server
+# GPTQ API Server
 
 LLM API server for AutoGPTQ model. This server is designed to be compatible with the OpenAI API, allowing you to seamlessly use OpenAI clients with it.
 
