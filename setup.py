@@ -19,11 +19,5 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=2.7',
-    install_requires=[
-        "auto-gptq==0.5.0.dev0",
-        "triton==2.1.0",
-        "fastapi==0.103.2",
-        "uvicorn==0.23.2",
-        "python-dotenv==1.0.0"
-    ]
+    install_requires=open('requirements.txt').read().split("\n")
 )
