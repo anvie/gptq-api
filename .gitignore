@@ -1,0 +1,33 @@
+dist/
+build/
+
+# Rust
+target/
+Cargo.lock
+*.rs.bk
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-*
+
+# General
+.DS_Store
+*.swp
+*.swo
+*.log
+.idea/
+.vscode/
+*.iml
+*.code-workspace
+*.env
+.env
+.env-*
+
+output/
