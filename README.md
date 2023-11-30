@@ -24,7 +24,7 @@ You can also configure the server using a `.env` file for convenience. Here's an
 
 ```dotenv
 # .env file
-MODEL_NAME=robinsyihab/Sidrap-7B-v2-GPTQ
+MODEL_NAME=robinsyihab/Sidrap-7B-v2-GPTQ-4bit
 PORT=8000
 WORKERS=1
 SYSTEM_PROMPT=
