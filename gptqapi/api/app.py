@@ -110,7 +110,7 @@ def create_app(chat_model: ChatModel) -> FastAPI:
                 continue
 
             if await req.is_disconnected():
-                print("[!] Client disconnected. Stopping generating.")
+                print("[!] Client disconnected.")
                 break
 
             choice_data = ChatCompletionResponseStreamChoice(
@@ -119,7 +119,6 @@ def create_app(chat_model: ChatModel) -> FastAPI:
                 finish_reason=None
             )
             chunk = ChatCompletionStreamResponse(model=request.model, choices=[choice_data])
-            print("new_text:", new_text)
             yield chunk.json(exclude_unset=True, ensure_ascii=False)
 
             await asyncio.sleep(0.03)
